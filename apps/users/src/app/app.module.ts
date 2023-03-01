@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ApiUtilsDatabaseModule } from '@simple-shop-manager/api/utils/database';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [ApiUtilsDatabaseModule],
+  imports: [],
   controllers: [AppController],
   providers: [AppService],
 })
